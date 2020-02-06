@@ -101,4 +101,78 @@ nav li a:hover {
     cursor: pointer;
 }
 
+.ranking{
+    margin-top: 250px;
+    padding-bottom: 100px;
+    border-bottom:  solid 2px #eeeeee;
+}
+
+.ranking-contents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ranking-contents-item{
+    margin: 5%;
+}
+
+.ranking-content-description{
+    display: grid;
+    text-align: center;
+}
+
+.mentions{
+    margin-top: 100px;
+    padding-bottom: 100px;
+}
+
+.mention-text{
+    text-align: center;
+    font-size: 30px;
+}
+
+.mention-contents{
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    justify-content: center;  
+}
+
+.mention-content-description{
+    box-shadow: 0px 3px 6px #00000029;
+    margin-right: 10px;
+}
+.mention-content-description h3,p{
+    padding:0 10px 10px 10px;
+
+}
+.mention-content-image img{
+    width: 100%;
+}
+
+footer{
+    width: 100%;
+    height: 60px;
+    background-color: #313337;
+    display: flex;
+    color: var(--white-color);
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+footer a:hover{
+    color: var(--green-color);
+}
+
+footer .mail{
+    padding: 0 15px;
+}
+
+footer .terms{
+    padding: 0 15px;
+}
 

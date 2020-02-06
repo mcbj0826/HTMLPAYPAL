@@ -7,4 +7,4 @@ var apellido = "Suarez Alfonso";
 var nomc= nombre+" "+apellido;
 
 
-alert(nomc);
+// alert(nomc);

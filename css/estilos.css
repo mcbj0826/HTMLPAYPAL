@@ -1,16 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+/*---- Variables------ */
+:root{
+    /* Colores */
+
+    --green-color:#7ACC2D;
+    --white-color:white;
+    --black-color:#313337;
+
+    /* Tipografia */
+
+    --normal:12px;
+
+    /* Espaciado */
+
+    --space:10px;
+
+    /* Box shadow */
+    --box: 0 0 2px #C1BCBC;
+}
+
+/*---- Variables------ */
 html,body{
     margin: 0;
     padding: 0;
-    font-size: 12px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: var(--normal);
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* HEADER */
 nav{
     display: flex;
-    background-color: #7ACC2D;
-    padding: 10px;
-    color: white;
+    background-color: var(--green-color);
+    padding: var(--space);
+    color: var(--white-color);
     justify-content: space-between;
     align-items: center;
 }
@@ -25,11 +47,11 @@ nav li{
 }
 
 nav li a {
-    color: black;
+    color: var(--black-color);
     text-decoration:none;
 }
 nav li a:hover {
-    color: white;
+    color: var(--white-color);
     text-decoration:none;
 }
 
@@ -51,25 +73,25 @@ nav li a:hover {
 }
 
 .product{
-    padding: 10px;
+    padding: var(--space);
     margin-top: -240px;
 
 }
 
 .product .content{
-    background-color: white;
+    background-color: var(--white-color);
     padding: 15px;
-    box-shadow: 0 0 3px #C1BCBC;
+    box-shadow: var(--box);
 }
 .img_content{
     text-align: center;
 }
 
 .main_button{
-    background-color: #7ACC2D ;
+    background-color: var(--green-color) ;
     width: 100%;
-    padding: 10px;
-    font-size: 17px;
+    padding: var(--space);
+    font-size: var(--normal);
     color: white;
     border:0;
     border-radius: 2px;

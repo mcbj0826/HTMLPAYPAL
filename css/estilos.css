@@ -150,7 +150,7 @@ nav li a:hover {
 }
 
 footer{
-    width: 100%;
+    width: 100vw;
     height: 60px;
     background-color: #313337;
     display: flex;

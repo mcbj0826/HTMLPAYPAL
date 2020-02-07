@@ -1,0 +1,61 @@
+.container{
+    max-width: 900px;
+    margin: auto;
+}
+.container h1{
+    text-align: center;
+}
+.row{
+    display: grid;
+    grid-template:repeat(3,300px)/repeat(3,1fr) ;
+    grid-template-areas: "ima1  desc1 desc1"
+                         "desc2 desc2 ima2"
+                         "ima3  desc3 desc3";                         
+}
+
+.ima1{
+    display: inherit;
+    grid-area: ima1;
+    justify-content:center;
+    vertical-align:center;
+    text-align:center
+
+
+}
+.desc1{
+    grid-area: desc1;
+    justify-self:center;
+    align-self:center;
+    flex-wrap: wrap;
+
+ 
+}
+
+.desc2{
+    grid-area: desc2;
+    width: 650px;
+    justify-self:center;
+    align-self:center;
+
+
+}
+.ima2{
+    display: inherit;
+    grid-area: ima2;
+    width: 250px;
+    justify-content:center;
+    align-items:center;
+}
+.ima3{
+    display: inherit;
+    grid-area:ima3;
+    justify-content:center;
+    align-items:center;
+}
+.desc3{
+
+    grid-area:desc3;
+    flex-wrap: wrap;
+    justify-self:center;
+    align-self: center;
+}

@@ -12,7 +12,56 @@
                          "desc2 desc2 ima2"
                          "ima3  desc3 desc3";                         
 }
+.row-product{
+    display: grid;
+    grid-template: 300px/repeat(2,1fr) ;
+    grid-template-areas: "product  formulario";                                      
+}
 
+.producto{
+    display: inherit;
+    grid-area: product;
+    justify-self: center;
+    align-self: center;
+    box-shadow: 0 0 2px #C1BCBC;
+    margin: 20px;
+
+}
+
+.producto h3{
+    text-align: center;
+}
+.img-produc{
+    max-width: 25%;
+    justify-self: center;
+    
+}
+.img-produc img{
+    max-width: 100%;
+
+}
+
+.formulario{
+    display: inherit;
+    grid-area: formulario;
+    box-shadow: 0 0 2px #C1BCBC;
+    padding:15px;
+    margin-right: 20px;
+
+}
+
+.formulario form{
+    display: inherit;
+    width: 80%;
+    justify-self: center;
+}
+
+form input{
+    margin-bottom: 15px;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 2px;
+}
 .ima1{
     display: inherit;
     grid-area: ima1;
@@ -58,4 +107,14 @@
     flex-wrap: wrap;
     justify-self:center;
     align-self: center;
+}
+
+
+
+.data-sale{
+    display: inherit;
+    grid-area: data-sale;
+    justify-self: center;
+    align-self: center;
+    box-shadow: 0 0 2px #C1BCBC
 }
